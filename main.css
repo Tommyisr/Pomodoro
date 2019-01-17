@@ -34,6 +34,8 @@ html, body {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      /*
+      -------------------------------------------------------
       @media  (max-width: 550px) {
         display: flex;
         flex-direction: column;
@@ -42,6 +44,8 @@ html, body {
         width: 100%;
         
       }
+      ---------------------------------------------------------
+      */
     }
     .opt {
       display: flex;
@@ -54,6 +58,8 @@ html, body {
     }
     #work, #break {
       width: 100px;
+      /*
+      ------------------------------------------------
       @media (max-width: 550px) {
        width: 250px; 
         display: flex;
@@ -61,6 +67,8 @@ html, body {
         justify-content: space-between;
         align-items: center;
       }
+      --------------------------------------------------
+      */
     }
     .time,.operator{
     /*   display: inline-block; */
@@ -93,12 +101,26 @@ html, body {
       transform: scale(1.2,1.2);	
       animation-name: example;
       animation-duration: 2.5s;
+      /* 
+    -----------------------------------------------------------------
+      WITHOUT SCSS
+      */
+      color: #BDB76B;
+      /* 
+      ---------------------------------------------------------------
+      */
+
+      /* 
+      WITH SCSS
+      ---------------------------------------------------------------
+      
       @keyframes example {
       0%   {color: #BDB76B;}
-       /* 25%  {color: #BDB76B;} */
-       /* 50%  {color: black;} */
       100% {color: black;}
     }
+
+      -----------------------------------------------------------------------
+    */
       
     }
     #main-timer {
@@ -112,6 +134,8 @@ html, body {
         ". session session ."
         ". zman zman ."
         "pause . . stop";
+        width: 300px;
+        /* justify-content: center; */
     }
     
     #play{
@@ -135,7 +159,11 @@ html, body {
     }
     #zman{
         grid-area: zman;
-    
+        
+    }
+
+    #session, #zman {
+      /* font-size: 50px; */
     }
     /* .fa-play {
       
