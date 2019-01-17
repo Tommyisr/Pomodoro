@@ -1,0 +1,155 @@
+html, body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Coiny', cursive;
+    background-color: #F5F5F5;
+    }
+     /* .head { */
+    /*   display: inline-block; */
+    /* }  */
+    
+    #H {
+      display: inline-block;
+    }
+    #O {
+      width: 35px;
+      height: 35px;
+      background-color: tomato;
+      border-radius: 100%;
+      display: inline-block;
+      line-height: 45px;
+      font-size: 35px;
+    /*   border: 1px solid green; */
+    }
+    /* h1 {
+        line-height: 30px;
+    
+    } */
+/* 
+    .wrapper {
+      margin: auto auto;
+    } */
+    
+    .options {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      @media  (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+      visibility: visible;
+        align-items: center;
+        width: 100%;
+        
+      }
+    }
+    .opt {
+      display: flex;
+      flex-direction: column;
+      border: 0px #D3D3D3 solid;
+      border-radius: 5%;
+      box-shadow: 2px 2px 10px 0.1px;
+      background-color: #F8F8FF;
+      margin: 1.5rem;
+    }
+    #work, #break {
+      width: 100px;
+      @media (max-width: 550px) {
+       width: 250px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .time,.operator{
+    /*   display: inline-block; */
+      margin: 1rem;
+        font-size: 30px;
+    /*   border: 1px red solid; */
+      margin: 5px;
+    
+    }
+    #title {
+      font-size: 30px;
+      /* color: #DAA520; */
+    }
+    .operator {
+      font-size: 30px;
+    }
+    
+    .fas:hover {
+      cursor: pointer;
+    }
+    .fa-plus:hover {
+      color: green;
+    }
+    .fa-minus:hover {
+    color:red;
+    }
+    
+    .fa-play:hover, .fa-stop:hover, .fa-sync-alt:hover, .fa-pause:hover {
+      /* // color: #BDB76B; */
+      transform: scale(1.2,1.2);	
+      animation-name: example;
+      animation-duration: 2.5s;
+      @keyframes example {
+      0%   {color: #BDB76B;}
+       /* 25%  {color: #BDB76B;} */
+       /* 50%  {color: black;} */
+      100% {color: black;}
+    }
+      
+    }
+    #main-timer {
+    /*   border: 1px blue solid; */
+      font-size: 30px;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "play . . restart"
+        ". session session ."
+        ". zman zman ."
+        "pause . . stop";
+    }
+    
+    #play{
+      grid-area: play;
+    }
+    #restart{
+        grid-area: restart;
+    
+    }
+    #pause{
+        grid-area: pause;
+    
+    }
+    #stop{
+        grid-area: stop;
+    
+    }
+    #session{
+        grid-area: session;
+    
+    }
+    #zman{
+        grid-area: zman;
+    
+    }
+    /* .fa-play {
+      
+    }
+    .fa-pause {
+      
+    }
+    .fa-stop {
+      
+    }
+    .fa-sync-alt {
+      
+    } */
+    
+    
+    
+    
