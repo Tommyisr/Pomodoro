@@ -34,19 +34,18 @@ html, body {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      /*
-      -------------------------------------------------------
-      @media  (max-width: 550px) {
-        display: flex;
-        flex-direction: column;
-      visibility: visible;
-        align-items: center;
-        width: 100%;
-        
-      }
-      ---------------------------------------------------------
-      */
-    }
+         }
+
+         @media  (max-width: 550px) {
+          .options {
+          display: flex;
+          flex-direction: column;
+        visibility: visible;
+          align-items: center;
+          width: 100%;
+        }
+        }
+
     .opt {
       display: flex;
       flex-direction: column;
@@ -58,18 +57,21 @@ html, body {
     }
     #work, #break {
       width: 100px;
-      /*
-      ------------------------------------------------
-      @media (max-width: 550px) {
-       width: 250px; 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-      --------------------------------------------------
-      */
+      /**/
+      
+      /**/
     }
+
+     @media (max-width: 550px) {
+      #work, #break {
+      width: 250px; 
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+     }
+    }
+
     .time,.operator{
     /*   display: inline-block; */
       margin: 1rem;
@@ -105,7 +107,7 @@ html, body {
     -----------------------------------------------------------------
       WITHOUT SCSS
       */
-      color: #BDB76B;
+      /* color: #BDB76B; */
       /* 
       ---------------------------------------------------------------
       */
@@ -113,16 +115,20 @@ html, body {
       /* 
       WITH SCSS
       ---------------------------------------------------------------
+      */
       
-      @keyframes example {
-      0%   {color: #BDB76B;}
-      100% {color: black;}
-    }
-
+    /*
       -----------------------------------------------------------------------
     */
       
     }
+
+    @keyframes example {
+      0%   {color: #BDB76B;}
+      100% {color: black;}
+    }
+
+
     #main-timer {
     /*   border: 1px blue solid; */
       font-size: 30px;
@@ -162,9 +168,9 @@ html, body {
         
     }
 
-    #session, #zman {
-      /* font-size: 50px; */
-    }
+     /* #session, #zman {
+      font-size: 50px;
+       } */
     /* .fa-play {
       
     }
